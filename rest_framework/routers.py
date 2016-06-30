@@ -87,7 +87,8 @@ class SimpleRouter(BaseRouter):
             url=r'^{prefix}{trailing_slash}$',
             mapping={
                 'get': 'list',
-                'post': 'create'
+                'post': 'create',
+                'delete': 'batch_delete'
             },
             name='{basename}-list',
             initkwargs={'suffix': 'List'}
