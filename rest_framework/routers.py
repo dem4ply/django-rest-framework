@@ -88,7 +88,8 @@ class SimpleRouter(BaseRouter):
             mapping={
                 'get': 'list',
                 'post': 'create',
-                'delete': 'batch_delete'
+                'delete': 'batch_delete',
+                'put': 'batch_update',
             },
             name='{basename}-list',
             initkwargs={'suffix': 'List'}
